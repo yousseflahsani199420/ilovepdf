@@ -725,6 +725,8 @@ const pageTemplate = (tool) => {
       <a class="brand" href="/">FreePDF Pro</a>
       <div class="actions">
         <a class="btn btn-alt" href="/tools/">All Tool Pages</a>
+        <a class="btn btn-alt" href="/about/">About Us</a>
+        <a class="btn btn-alt" href="/contact/">Contact</a>
         <a class="btn btn-main" href="/?tool=${tool.id}#tools">Open ${tool.name}</a>
       </div>
     </div>
@@ -847,7 +849,11 @@ const indexTemplate = () => {
   <main class="wrap">
     <div class="top">
       <a class="brand" href="/">FreePDF Pro</a>
-      <div class="actions"><a class="btn btn-main" href="/">Open Main App</a></div>
+      <div class="actions">
+        <a class="btn btn-alt" href="/about/">About Us</a>
+        <a class="btn btn-alt" href="/contact/">Contact</a>
+        <a class="btn btn-main" href="/">Open Main App</a>
+      </div>
     </div>
     <section class="hero">
       <h1>All Tool Pages</h1>

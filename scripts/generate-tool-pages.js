@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 
 const BASE_URL = "https://www.i-lovepdf.site";
-const GA_ID = "G-R5H4T1E848";
 const ADS_ID = "AW-17966685744";
 const ADS_PAGEVIEW_SEND_TO = "AW-17966685744/gx2DCM-MpPwbELC8l_dC";
 const OUTPUT_DIR = path.join(__dirname, "..", "tools");
@@ -656,7 +655,8 @@ const pageTemplate = (tool) => {
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '${ADS_ID}');
-    gtag('config', '${GA_ID}');
+  </script>
+  <script>
     gtag('event', 'conversion', {
       'send_to': '${ADS_PAGEVIEW_SEND_TO}',
       'value': 1.0,
@@ -802,7 +802,8 @@ const indexTemplate = () => {
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '${ADS_ID}');
-    gtag('config', '${GA_ID}');
+  </script>
+  <script>
     gtag('event', 'conversion', {
       'send_to': '${ADS_PAGEVIEW_SEND_TO}',
       'value': 1.0,

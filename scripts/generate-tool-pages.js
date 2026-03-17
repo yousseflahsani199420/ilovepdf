@@ -698,6 +698,7 @@ const pageTemplate = (tool) => {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>${css}</style>
+  <script src="/language-switcher.js" defer></script>
   <script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -838,6 +839,7 @@ const indexTemplate = () => {
   .list a{display:flex;align-items:center;gap:8px;padding:12px;border-radius:10px;border:1px solid var(--ring);background:#fff;text-decoration:none}
   @media (max-width:760px){.list{grid-template-columns:1fr}}
   </style>
+  <script src="/language-switcher.js" defer></script>
   <script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@type": "CollectionPage",

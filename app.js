@@ -26,9 +26,9 @@ const toolConfig = {
   qrscan: { title: "QR Code Scanner", accept: "image/*", multiple: false, options: "qrscan" },
   barcodegen: { title: "Barcode Generator", accept: "", multiple: false, options: "barcodegen", noFile: true },
   barcodescan: { title: "Barcode Scanner", accept: "image/*", multiple: false, options: "barcodescan" },
-  imageconvert: { title: "Image Converter", accept: "image/*", multiple: true, options: "imageconvert" },
-  imageresize: { title: "Image Resizer", accept: "image/*", multiple: true, options: "imageresize" },
-  photocompress: { title: "Photo Compressor", accept: "image/*", multiple: true, options: "photocompress" },
+  imageconvert: { title: "Image Converter", accept: "image/*", multiple: false, options: "imageconvert" },
+  imageresize: { title: "Image Resizer", accept: "image/*", multiple: false, options: "imageresize" },
+  photocompress: { title: "Photo Compressor", accept: "image/*", multiple: false, options: "photocompress" },
   videotogif: { title: "Video to GIF", accept: "video/*", multiple: false, options: "videotogif" },
   videocompress: { title: "Video Compressor", accept: "video/*", multiple: false, options: "videocompress" },
   rotate: { title: "Rotate PDF", accept: ".pdf", multiple: false, options: "rotate" },
@@ -171,10 +171,10 @@ function setupOptionsPanel(optionType) {
       html += `<div class="option-group"><label>Target Page Size</label><select id="targetPageSize"><option value="A4" selected>A4</option><option value="LETTER">Letter</option><option value="LEGAL">Legal</option></select></div><div class="option-group"><label>Fit Mode</label><select id="pageFitMode"><option value="contain" selected>Contain (keep full page)</option><option value="cover">Cover (fill page)</option></select></div>`;
       break;
     case "pdftojpg":
-      html += `<div class="option-group"><label>Render DPI</label><select id="imageQuality"><option value="150">150 DPI</option><option value="300" selected>300 DPI</option><option value="600">600 DPI</option></select></div><div class="option-group"><label>JPG Quality</label><select id="jpgQuality"><option value="0.7">70%</option><option value="0.85" selected>85%</option><option value="0.95">95%</option></select></div>`;
+      html += `<div class="option-group"><label>Page Number</label><input type="number" id="pdfImagePage" min="1" value="1"></div><div class="option-group"><label>Render DPI</label><select id="imageQuality"><option value="150">150 DPI</option><option value="300" selected>300 DPI</option><option value="600">600 DPI</option></select></div><div class="option-group"><label>JPG Quality</label><select id="jpgQuality"><option value="0.7">70%</option><option value="0.85" selected>85%</option><option value="0.95">95%</option></select></div>`;
       break;
     case "pdftopng":
-      html += `<div class="option-group"><label>Render DPI</label><select id="imageQuality"><option value="150">150 DPI</option><option value="300" selected>300 DPI</option><option value="600">600 DPI</option></select></div>`;
+      html += `<div class="option-group"><label>Page Number</label><input type="number" id="pdfImagePage" min="1" value="1"></div><div class="option-group"><label>Render DPI</label><select id="imageQuality"><option value="150">150 DPI</option><option value="300" selected>300 DPI</option><option value="600">600 DPI</option></select></div>`;
       break;
     case "imagetopdf":
       html += `<div class="option-group"><label>Page Size</label><select id="pageSize"><option value="a4">A4</option><option value="letter">Letter</option><option value="original" selected>Original image size</option></select></div><div class="option-group"><label>Orientation</label><select id="orientation"><option value="auto" selected>Auto</option><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select></div>`;
@@ -442,6 +442,10 @@ function handleFiles(files) {
       showError("Please upload valid PDF files.");
     }
     return;
+  }
+
+  if (!cfg.multiple && valid.length > 1) {
+    showError("This tool accepts one file at a time. Using the first file only.");
   }
 
   uploadedFiles = cfg.multiple ? [...uploadedFiles, ...valid] : [valid[0]];
@@ -812,22 +816,20 @@ async function pdfToImage(format) {
   const quality = parseInt(document.getElementById("imageQuality").value, 10);
   const jpgQuality = format === "jpg" ? parseFloat(document.getElementById("jpgQuality").value || "0.85") : 1;
   const pdf = await pdfjsLib.getDocument({ data: await uploadedFiles[0].arrayBuffer() }).promise;
-  const zip = new JSZip();
-  const folder = zip.folder("images");
-  for (let i = 1; i <= pdf.numPages; i += 1) {
-    updateProgress(10 + (i / pdf.numPages) * 80);
-    const page = await pdf.getPage(i);
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    const viewport = page.getViewport({ scale: quality / 72 });
-    canvas.width = viewport.width;
-    canvas.height = viewport.height;
-    await page.render({ canvasContext: ctx, viewport }).promise;
-    const mime = format === "jpg" ? "image/jpeg" : "image/png";
-    folder.file(`page_${i}.${format}`, canvas.toDataURL(mime, jpgQuality).split(",")[1], { base64: true });
-  }
-  processedBlob = await zip.generateAsync({ type: "blob" });
-  processedFileName = `pdf_pages_${format}.zip`;
+  const inputPage = parseInt(document.getElementById("pdfImagePage")?.value || "1", 10);
+  const pageNumber = Math.max(1, Math.min(pdf.numPages, Number.isFinite(inputPage) ? inputPage : 1));
+  updateProgress(25);
+  const page = await pdf.getPage(pageNumber);
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+  const viewport = page.getViewport({ scale: quality / 72 });
+  canvas.width = viewport.width;
+  canvas.height = viewport.height;
+  await page.render({ canvasContext: ctx, viewport }).promise;
+  const mime = format === "jpg" ? "image/jpeg" : "image/png";
+  processedBlob = await canvasToBlob(canvas, mime, jpgQuality);
+  processedFileName = `page_${pageNumber}.${format}`;
+  resultDetailsHtml = `<span>Exported page ${pageNumber} of ${pdf.numPages}</span>`;
 }
 
 async function imagesToPDF() {
@@ -1047,59 +1049,35 @@ async function scanBarcode() {
 async function convertImages() {
   const outputMime = document.getElementById("imageConvertFormat").value;
   const quality = Math.max(0.2, Math.min(0.95, parseInt(document.getElementById("imageConvertQuality").value || "85", 10) / 100));
-  const outputs = [];
-  for (let i = 0; i < uploadedFiles.length; i += 1) {
-    const file = uploadedFiles[i];
-    const bitmap = await createImageBitmap(file);
-    const canvas = document.createElement("canvas");
-    canvas.width = bitmap.width;
-    canvas.height = bitmap.height;
-    const ctx = canvas.getContext("2d");
-    ctx.drawImage(bitmap, 0, 0);
-    const blob = await canvasToBlob(canvas, outputMime, quality);
-    outputs.push({ name: `${file.name.replace(/\.[^.]+$/, "")}.${extensionFromMime(outputMime)}`, blob });
-    updateProgress(10 + ((i + 1) / uploadedFiles.length) * 80);
-  }
-  if (outputs.length === 1) {
-    processedBlob = outputs[0].blob;
-    processedFileName = outputs[0].name;
-  } else {
-    const zip = new JSZip();
-    outputs.forEach((item) => zip.file(item.name, item.blob));
-    processedBlob = await zip.generateAsync({ type: "blob" });
-    processedFileName = "converted-images.zip";
-  }
+  const file = uploadedFiles[0];
+  const bitmap = await createImageBitmap(file);
+  const canvas = document.createElement("canvas");
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(bitmap, 0, 0);
+  processedBlob = await canvasToBlob(canvas, outputMime, quality);
+  processedFileName = `${file.name.replace(/\.[^.]+$/, "")}.${extensionFromMime(outputMime)}`;
+  updateProgress(90);
 }
 
 async function resizeImages() {
   const maxW = Math.max(32, parseInt(document.getElementById("resizeWidth").value || "1920", 10));
   const maxH = Math.max(32, parseInt(document.getElementById("resizeHeight").value || "1920", 10));
   const outputMime = document.getElementById("resizeFormat").value;
-  const outputs = [];
-  for (let i = 0; i < uploadedFiles.length; i += 1) {
-    const file = uploadedFiles[i];
-    const bitmap = await createImageBitmap(file);
-    const scale = Math.min(maxW / bitmap.width, maxH / bitmap.height, 1);
-    const width = Math.max(1, Math.round(bitmap.width * scale));
-    const height = Math.max(1, Math.round(bitmap.height * scale));
-    const canvas = document.createElement("canvas");
-    canvas.width = width;
-    canvas.height = height;
-    const ctx = canvas.getContext("2d");
-    ctx.drawImage(bitmap, 0, 0, width, height);
-    const blob = await canvasToBlob(canvas, outputMime, 0.9);
-    outputs.push({ name: `${file.name.replace(/\.[^.]+$/, "")}-resized.${extensionFromMime(outputMime)}`, blob });
-    updateProgress(10 + ((i + 1) / uploadedFiles.length) * 80);
-  }
-  if (outputs.length === 1) {
-    processedBlob = outputs[0].blob;
-    processedFileName = outputs[0].name;
-  } else {
-    const zip = new JSZip();
-    outputs.forEach((item) => zip.file(item.name, item.blob));
-    processedBlob = await zip.generateAsync({ type: "blob" });
-    processedFileName = "resized-images.zip";
-  }
+  const file = uploadedFiles[0];
+  const bitmap = await createImageBitmap(file);
+  const scale = Math.min(maxW / bitmap.width, maxH / bitmap.height, 1);
+  const width = Math.max(1, Math.round(bitmap.width * scale));
+  const height = Math.max(1, Math.round(bitmap.height * scale));
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(bitmap, 0, 0, width, height);
+  processedBlob = await canvasToBlob(canvas, outputMime, 0.9);
+  processedFileName = `${file.name.replace(/\.[^.]+$/, "")}-resized.${extensionFromMime(outputMime)}`;
+  updateProgress(90);
 }
 
 function waitForVideoSeek(video, time) {
@@ -1174,37 +1152,21 @@ async function compressPhotos() {
   const outputMime = document.getElementById("photoFormat").value;
   const quality = Math.max(0.2, Math.min(0.95, parseInt(document.getElementById("photoQuality").value || "80", 10) / 100));
   const maxWidth = Math.max(0, parseInt(document.getElementById("photoMaxWidth").value || "1920", 10));
-  const outputs = [];
+  const file = uploadedFiles[0];
+  const bitmap = await createImageBitmap(file);
+  const scale = maxWidth > 0 ? Math.min(1, maxWidth / bitmap.width) : 1;
+  const width = Math.max(1, Math.round(bitmap.width * scale));
+  const height = Math.max(1, Math.round(bitmap.height * scale));
 
-  for (let i = 0; i < uploadedFiles.length; i += 1) {
-    const file = uploadedFiles[i];
-    const bitmap = await createImageBitmap(file);
-    const scale = maxWidth > 0 ? Math.min(1, maxWidth / bitmap.width) : 1;
-    const width = Math.max(1, Math.round(bitmap.width * scale));
-    const height = Math.max(1, Math.round(bitmap.height * scale));
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+  canvas.width = width;
+  canvas.height = height;
+  ctx.drawImage(bitmap, 0, 0, width, height);
 
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = width;
-    canvas.height = height;
-    ctx.drawImage(bitmap, 0, 0, width, height);
-
-    const blob = await canvasToBlob(canvas, outputMime, quality);
-    const baseName = file.name.replace(/\.[^.]+$/, "");
-    outputs.push({ name: `${baseName}-compressed.${extensionFromMime(outputMime)}`, blob });
-    updateProgress(10 + ((i + 1) / uploadedFiles.length) * 80);
-  }
-
-  if (outputs.length === 1) {
-    processedBlob = outputs[0].blob;
-    processedFileName = outputs[0].name;
-    return;
-  }
-
-  const zip = new JSZip();
-  outputs.forEach((item) => zip.file(item.name, item.blob));
-  processedBlob = await zip.generateAsync({ type: "blob" });
-  processedFileName = "compressed-photos.zip";
+  processedBlob = await canvasToBlob(canvas, outputMime, quality);
+  processedFileName = `${file.name.replace(/\.[^.]+$/, "")}-compressed.${extensionFromMime(outputMime)}`;
+  updateProgress(90);
 }
 
 async function compressVideo() {

@@ -47,8 +47,6 @@
     <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
     <!-- PDF.js for rendering -->
     <script src="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
-    <!-- JSZip for handling multiple files -->
-    <script src="https://unpkg.com/jszip@3.10.1/dist/jszip.min.js"></script>
     <!-- FileSaver for downloads -->
     <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.min.js"></script>
     <!-- QR generation -->
@@ -1038,8 +1036,8 @@
                     <div class="tool-card" data-tool="metadatapdf"><div class="tool-icon">&#128221;</div><h3>PDF Metadata Editor</h3><p>Edit title, author, subject, and keywords.</p><span class="tool-tag">Edit</span></div>
                     <div class="tool-card" data-tool="removeblankpdf"><div class="tool-icon">&#128465;</div><h3>Remove Blank Pages</h3><p>Detect and remove blank pages automatically.</p><span class="tool-tag">Organize</span></div>
                     <div class="tool-card" data-tool="resizepdfpages"><div class="tool-icon">&#128196;</div><h3>Page Size Converter</h3><p>Convert pages to A4, Letter, or Legal size.</p><span class="tool-tag">Convert</span></div>
-                    <div class="tool-card" data-tool="pdftojpg"><div class="tool-icon">&#128247;</div><h3>PDF to JPG</h3><p>Convert each PDF page to JPG images in a ZIP file.</p><span class="tool-tag">Convert</span></div>
-                    <div class="tool-card" data-tool="pdftopng"><div class="tool-icon">&#127912;</div><h3>PDF to PNG</h3><p>Create high-quality PNG images from every PDF page.</p><span class="tool-tag">Convert</span></div>
+                    <div class="tool-card" data-tool="pdftojpg"><div class="tool-icon">&#128247;</div><h3>PDF to JPG</h3><p>Convert a selected PDF page to a JPG image file.</p><span class="tool-tag">Convert</span></div>
+                    <div class="tool-card" data-tool="pdftopng"><div class="tool-icon">&#127912;</div><h3>PDF to PNG</h3><p>Convert a selected PDF page to a PNG image file.</p><span class="tool-tag">Convert</span></div>
                     <div class="tool-card" data-tool="rotate"><div class="tool-icon">&#8635;</div><h3>Rotate PDF</h3><p>Rotate all pages by 90, 180, or 270 degrees quickly.</p><span class="tool-tag">Utility</span></div>
                     <div class="tool-card" data-tool="deletepages"><div class="tool-icon">&#128465;</div><h3>Delete PDF Pages</h3><p>Remove selected pages from a PDF using page ranges.</p><span class="tool-tag">Organize</span></div>
                     <div class="tool-card" data-tool="extractpages"><div class="tool-icon">&#128230;</div><h3>Extract PDF Pages</h3><p>Extract selected pages and save them as a new PDF file.</p><span class="tool-tag">Organize</span></div>
@@ -1057,9 +1055,9 @@
                 <div class="tools-grid">
                     <div class="tool-card" data-tool="imagetopdf"><div class="tool-icon">&#128444;</div><h3>Image to PDF</h3><p>Convert JPG and PNG files into a single PDF document.</p><span class="tool-tag">Convert</span></div>
                     <div class="tool-card" data-tool="ocrtool"><div class="tool-icon">&#128269;</div><h3>OCR to Text</h3><p>Extract text from images or PDFs using OCR.</p><span class="tool-tag">AI</span></div>
-                    <div class="tool-card" data-tool="imageconvert"><div class="tool-icon">&#8646;</div><h3>Image Converter</h3><p>Convert images between JPG, PNG, and WEBP formats.</p><span class="tool-tag">Convert</span></div>
-                    <div class="tool-card" data-tool="imageresize"><div class="tool-icon">&#8596;</div><h3>Image Resizer</h3><p>Resize images in batch with max width/height limits.</p><span class="tool-tag">Resize</span></div>
-                    <div class="tool-card" data-tool="photocompress"><div class="tool-icon">&#128248;</div><h3>Photo Compressor</h3><p>Compress photos and reduce image size while keeping quality.</p><span class="tool-tag">Image</span></div>
+                    <div class="tool-card" data-tool="imageconvert"><div class="tool-icon">&#8646;</div><h3>Image Converter</h3><p>Convert one image between JPG, PNG, and WEBP formats.</p><span class="tool-tag">Convert</span></div>
+                    <div class="tool-card" data-tool="imageresize"><div class="tool-icon">&#8596;</div><h3>Image Resizer</h3><p>Resize one image with max width and height limits.</p><span class="tool-tag">Resize</span></div>
+                    <div class="tool-card" data-tool="photocompress"><div class="tool-icon">&#128248;</div><h3>Photo Compressor</h3><p>Compress one photo and reduce image size while keeping quality.</p><span class="tool-tag">Image</span></div>
                 </div>
             </div>
 

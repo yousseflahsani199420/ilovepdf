@@ -136,13 +136,13 @@ const tools = [
     slug: "pdf-to-jpg",
     name: "PDF to JPG",
     title: "Convert PDF to JPG Images",
-    description: "Convert each PDF page to JPG image files packed in a ZIP.",
+    description: "Convert one selected PDF page to a JPG image file instantly.",
     keywords: "pdf to jpg, convert pdf to image, pdf to jpeg",
     howTo: [
       "Open PDF to JPG.",
       "Upload one PDF file.",
-      "Choose DPI and JPG quality.",
-      "Process and download your ZIP of JPG images."
+      "Choose page number, DPI, and JPG quality.",
+      "Process and download a single JPG file."
     ]
   },
   {
@@ -150,13 +150,13 @@ const tools = [
     slug: "pdf-to-png",
     name: "PDF to PNG",
     title: "Convert PDF to PNG Online",
-    description: "Turn PDF pages into high-quality PNG images online for free.",
+    description: "Convert one selected PDF page to a high-quality PNG image.",
     keywords: "pdf to png, convert pdf pages to png, pdf image converter",
     howTo: [
       "Open PDF to PNG.",
       "Upload your PDF file.",
-      "Choose output DPI.",
-      "Process and download the PNG ZIP archive."
+      "Choose page number and output DPI.",
+      "Process and download a single PNG image."
     ]
   },
   {
@@ -196,9 +196,9 @@ const tools = [
     keywords: "image converter, jpg to png, png to webp",
     howTo: [
       "Open image converter.",
-      "Upload one or multiple images.",
+      "Upload one image.",
       "Choose output format and quality.",
-      "Convert and download converted files."
+      "Convert and download a single output file."
     ]
   },
   {
@@ -206,13 +206,13 @@ const tools = [
     slug: "image-resizer",
     name: "Image Resizer",
     title: "Resize Images Online",
-    description: "Resize one or many images with max width and height limits.",
+    description: "Resize one image with max width and height limits.",
     keywords: "image resizer, resize photos online, batch image resize",
     howTo: [
       "Open image resizer.",
-      "Upload your images.",
+      "Upload one image.",
       "Set max width, height, and output format.",
-      "Resize and download optimized images."
+      "Resize and download a single optimized image."
     ]
   },
   {
@@ -294,9 +294,9 @@ const tools = [
     keywords: "photo compressor, image compressor, reduce image size",
     howTo: [
       "Open photo compressor.",
-      "Upload one or multiple image files.",
+      "Upload one image file.",
       "Set format, quality, and max width.",
-      "Compress and download optimized images."
+      "Compress and download a single optimized image."
     ]
   },
   {

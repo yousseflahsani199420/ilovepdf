@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const BASE_URL = "https://www.i-lovepdf.site";
+const GA_ID = "G-R5H4T1E848";
+const ADS_ID = "AW-17966685744";
 const OUTPUT_DIR = path.join(__dirname, "..", "tools");
 
 const tools = [
@@ -647,6 +649,28 @@ const pageTemplate = (tool) => {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_ID}');
+    gtag('config', '${ADS_ID}');
+  </script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("landing") === "1" || params.get("stay") === "1" || params.get("no_redirect") === "1") {
+        return;
+      }
+      params.set("tool", "${tool.id}");
+      params.delete("landing");
+      params.delete("stay");
+      params.delete("no_redirect");
+      const target = "/?" + params.toString() + "#tools";
+      window.location.replace(target);
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${tool.title} | FreePDF Pro</title>
@@ -766,6 +790,14 @@ const indexTemplate = () => {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_ID}');
+    gtag('config', '${ADS_ID}');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Tool Pages | FreePDF Pro</title>

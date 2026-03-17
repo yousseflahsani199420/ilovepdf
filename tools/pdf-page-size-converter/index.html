@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5H4T1E848"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R5H4T1E848');
-</script>
-
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5H4T1E848"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R5H4T1E848');
+    gtag('config', 'AW-17966685744');
+  </script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("landing") === "1" || params.get("stay") === "1" || params.get("no_redirect") === "1") {
+        return;
+      }
+      params.set("tool", "resizepdfpages");
+      params.delete("landing");
+      params.delete("stay");
+      params.delete("no_redirect");
+      const target = "/?" + params.toString() + "#tools";
+      window.location.replace(target);
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Convert PDF Page Size | FreePDF Pro</title>

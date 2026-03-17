@@ -20,6 +20,9 @@ const toolConfig = {
   pdftojpg: { title: "PDF to JPG Converter", accept: ".pdf", multiple: false, options: "pdftojpg" },
   pdftopng: { title: "PDF to PNG Converter", accept: ".pdf", multiple: false, options: "pdftopng" },
   imagetopdf: { title: "Image to PDF Converter", accept: "image/*", multiple: true, options: "imagetopdf" },
+  pngtopdf: { title: "PNG to PDF Converter", accept: ".png,image/png", multiple: false, options: "imagetopdf" },
+  jpgtopdf: { title: "JPG to PDF Converter", accept: ".jpg,.jpeg,image/jpeg,image/jpg", multiple: false, options: "imagetopdf" },
+  heictopdf: { title: "HEIC to PDF Converter", accept: ".heic,.heif,image/heic,image/heif", multiple: false, options: "imagetopdf" },
   ocrtool: { title: "OCR to Text", accept: ".pdf,image/*", multiple: false, options: "ocrtool" },
   qrtemplates: { title: "QR Templates", accept: "", multiple: false, options: "qrtemplates", noFile: true },
   qrcreate: { title: "QR Code Generator", accept: "", multiple: false, options: "qrcreate", noFile: true },
@@ -70,6 +73,36 @@ const elements = {
   navLogo: document.getElementById("navLogo")
 };
 
+const CDN = {
+  jsqr: "https://unpkg.com/jsqr@1.4.0/dist/jsQR.js",
+  heic2any: "https://unpkg.com/heic2any@0.0.4/dist/heic2any.min.js",
+  tesseract: "https://unpkg.com/tesseract.js@5.1.0/dist/tesseract.min.js",
+  jsbarcode: "https://unpkg.com/jsbarcode@3.11.6/dist/JsBarcode.all.min.js",
+  gifjs: "https://unpkg.com/gif.js.optimized/dist/gif.js"
+};
+
+const scriptLoadCache = new Map();
+
+function loadScriptOnce(src) {
+  if (scriptLoadCache.has(src)) return scriptLoadCache.get(src);
+  const promise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error(`Failed to load script: ${src}`));
+    document.head.appendChild(script);
+  });
+  scriptLoadCache.set(src, promise);
+  return promise;
+}
+
+async function ensureLibrary(checkFn, src, errorLabel) {
+  if (checkFn()) return;
+  await loadScriptOnce(src);
+  if (!checkFn()) throw new Error(`${errorLabel} failed to load.`);
+}
+
 function initEventListeners() {
   document.querySelectorAll(".tool-card").forEach((card) => {
     card.addEventListener("click", function () {
@@ -118,6 +151,9 @@ function humanAccept(accept) {
   if (accept === "video/*") return "Video files";
   if (accept === ".pdf") return "PDF";
   if (accept === ".pdf,image/*") return "PDF or image";
+  if (accept === ".png,image/png") return "PNG image";
+  if (accept === ".jpg,.jpeg,image/jpeg,image/jpg") return "JPG image";
+  if (accept === ".heic,.heif,image/heic,image/heif") return "HEIC image";
   if (!accept) return "No file needed";
   return accept;
 }
@@ -408,6 +444,24 @@ function isJpgOrPng(file) {
   return type === "image/png" || type === "image/jpeg" || type === "image/jpg";
 }
 
+function isPng(file) {
+  const type = (file.type || "").toLowerCase();
+  const name = (file.name || "").toLowerCase();
+  return type === "image/png" || name.endsWith(".png");
+}
+
+function isJpg(file) {
+  const type = (file.type || "").toLowerCase();
+  const name = (file.name || "").toLowerCase();
+  return type === "image/jpeg" || type === "image/jpg" || name.endsWith(".jpg") || name.endsWith(".jpeg");
+}
+
+function isHeic(file) {
+  const type = (file.type || "").toLowerCase();
+  const name = (file.name || "").toLowerCase();
+  return type === "image/heic" || type === "image/heif" || name.endsWith(".heic") || name.endsWith(".heif");
+}
+
 function isImage(file) {
   return (file.type || "").toLowerCase().startsWith("image/");
 }
@@ -424,6 +478,9 @@ function handleFiles(files) {
       if (currentTool === "imagetopdf") return isJpgOrPng(file);
       return isImage(file);
     }
+    if (cfg.accept === ".png,image/png") return isPng(file);
+    if (cfg.accept === ".jpg,.jpeg,image/jpeg,image/jpg") return isJpg(file);
+    if (cfg.accept === ".heic,.heif,image/heic,image/heif") return isHeic(file);
     if (cfg.accept === "video/*") return isVideo(file);
     if (cfg.accept === ".pdf,image/*") return isPdf(file) || isImage(file);
     return isPdf(file);
@@ -432,6 +489,12 @@ function handleFiles(files) {
   if (!valid.length) {
     if (cfg.accept === "image/*" && currentTool === "imagetopdf") {
       showError("Please upload JPG or PNG files.");
+    } else if (cfg.accept === ".png,image/png") {
+      showError("Please upload a PNG image.");
+    } else if (cfg.accept === ".jpg,.jpeg,image/jpeg,image/jpg") {
+      showError("Please upload a JPG image.");
+    } else if (cfg.accept === ".heic,.heif,image/heic,image/heif") {
+      showError("Please upload a HEIC image.");
     } else if (cfg.accept === "image/*") {
       showError("Please upload a valid image file.");
     } else if (cfg.accept === "video/*") {
@@ -450,7 +513,7 @@ function handleFiles(files) {
 
   uploadedFiles = cfg.multiple ? [...uploadedFiles, ...valid] : [valid[0]];
   displayFileList();
-  if (["imagetopdf", "photocompress", "qrscan", "barcodescan", "imageconvert", "imageresize"].includes(currentTool)) showImagePreviews();
+  if (["imagetopdf", "pngtopdf", "jpgtopdf", "heictopdf", "photocompress", "qrscan", "barcodescan", "imageconvert", "imageresize"].includes(currentTool)) showImagePreviews();
 }
 
 function displayFileList() {
@@ -466,7 +529,7 @@ function removeFile(index) {
   if (!uploadedFiles.length) resetTool();
   else {
     displayFileList();
-    if (["imagetopdf", "photocompress", "qrscan", "barcodescan", "imageconvert", "imageresize"].includes(currentTool)) showImagePreviews();
+    if (["imagetopdf", "pngtopdf", "jpgtopdf", "heictopdf", "photocompress", "qrscan", "barcodescan", "imageconvert", "imageresize"].includes(currentTool)) showImagePreviews();
   }
 }
 
@@ -549,6 +612,9 @@ async function processFiles() {
       case "pdftojpg": await pdfToImage("jpg"); break;
       case "pdftopng": await pdfToImage("png"); break;
       case "imagetopdf": await imagesToPDF(); break;
+      case "pngtopdf": await singleImageTypeToPDF("png"); break;
+      case "jpgtopdf": await singleImageTypeToPDF("jpg"); break;
+      case "heictopdf": await singleImageTypeToPDF("heic"); break;
       case "ocrtool": await runOCRTool(); break;
       case "qrtemplates": await generateTemplateQR(); break;
       case "qrcreate": await generateQRCode(); break;
@@ -863,6 +929,62 @@ async function imagesToPDF() {
   processedFileName = "images.pdf";
 }
 
+async function convertHeicToJpegBlob(file) {
+  await ensureLibrary(() => typeof heic2any === "function", CDN.heic2any, "HEIC conversion library");
+  const converted = await heic2any({
+    blob: file,
+    toType: "image/jpeg",
+    quality: 0.92
+  });
+  const blob = Array.isArray(converted) ? converted[0] : converted;
+  if (!(blob instanceof Blob)) throw new Error("Unable to convert HEIC image.");
+  return blob;
+}
+
+async function singleImageTypeToPDF(kind) {
+  const { PDFDocument, PageSizes } = PDFLib;
+  const file = uploadedFiles[0];
+  const pageSize = document.getElementById("pageSize").value;
+  const orientation = document.getElementById("orientation").value;
+  let sourceBlob = file;
+  let sourceMime = (file.type || "").toLowerCase();
+
+  if (kind === "png" && !isPng(file)) throw new Error("Please upload a PNG image.");
+  if (kind === "jpg" && !isJpg(file)) throw new Error("Please upload a JPG image.");
+  if (kind === "heic") {
+    if (!isHeic(file)) throw new Error("Please upload a HEIC image.");
+    sourceBlob = await convertHeicToJpegBlob(file);
+    sourceMime = "image/jpeg";
+  }
+
+  const bytes = await sourceBlob.arrayBuffer();
+  const out = await PDFDocument.create();
+  const image = sourceMime === "image/png" ? await out.embedPng(bytes) : await out.embedJpg(bytes);
+  const dims = image.scale(1);
+  let w = dims.width;
+  let h = dims.height;
+
+  if (pageSize !== "original") {
+    const size = pageSize === "a4" ? PageSizes.A4 : PageSizes.Letter;
+    let pw = size[0];
+    let ph = size[1];
+    if (orientation === "landscape" || (orientation === "auto" && w > h)) [pw, ph] = [ph, pw];
+    const margin = 40;
+    const scale = Math.min((pw - margin * 2) / w, (ph - margin * 2) / h);
+    w *= scale;
+    h *= scale;
+    const page = out.addPage([pw, ph]);
+    page.drawImage(image, { x: (pw - w) / 2, y: (ph - h) / 2, width: w, height: h });
+  } else {
+    const page = out.addPage([w, h]);
+    page.drawImage(image, { x: 0, y: 0, width: w, height: h });
+  }
+
+  updateProgress(90);
+  processedBlob = new Blob([await out.save()], { type: "application/pdf" });
+  processedFileName = `${file.name.replace(/\.[^.]+$/, "")}.pdf`;
+}
+
 function dataUrlToBlob(dataUrl) {
   const [header, base64] = dataUrl.split(",");
   const mime = (header.match(/data:(.*?);base64/) || [])[1] || "application/octet-stream";
@@ -946,7 +1068,7 @@ async function generateTemplateQR() {
 }
 
 async function runOCRTool() {
-  if (typeof Tesseract === "undefined") throw new Error("OCR library failed to load.");
+  await ensureLibrary(() => typeof Tesseract !== "undefined", CDN.tesseract, "OCR library");
   const lang = document.getElementById("ocrLang").value || "eng";
   const mode = document.getElementById("ocrMode").value || "text";
   const file = uploadedFiles[0];
@@ -988,6 +1110,14 @@ async function scanQRCode() {
     if (results.length && results[0].rawValue) decoded = results[0].rawValue.trim();
   }
 
+  if (!decoded && typeof jsQR === "undefined") {
+    try {
+      await ensureLibrary(() => typeof jsQR === "function", CDN.jsqr, "QR scanner fallback library");
+    } catch (_) {
+      // Keep fallback optional when BarcodeDetector is available.
+    }
+  }
+
   if (!decoded && typeof jsQR === "function") {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d", { willReadFrequently: true });
@@ -1013,7 +1143,7 @@ async function scanQRCode() {
 }
 
 async function generateBarcode() {
-  if (typeof JsBarcode === "undefined") throw new Error("Barcode library failed to load.");
+  await ensureLibrary(() => typeof JsBarcode !== "undefined", CDN.jsbarcode, "Barcode library");
   const value = (document.getElementById("barcodeValue").value || "").trim();
   if (!value) throw new Error("Enter barcode value.");
   const format = document.getElementById("barcodeFormat").value;
@@ -1095,7 +1225,7 @@ function waitForVideoSeek(video, time) {
 }
 
 async function convertVideoToGIF() {
-  if (typeof GIF === "undefined") throw new Error("GIF library failed to load.");
+  await ensureLibrary(() => typeof GIF !== "undefined", CDN.gifjs, "GIF library");
   const file = uploadedFiles[0];
   const fps = parseInt(document.getElementById("gifFps").value || "12", 10);
   const quality = parseInt(document.getElementById("gifQuality").value || "10", 10);
@@ -1440,6 +1570,7 @@ function appendStructuredData() {
       "Merge PDF", "Split PDF", "Compress PDF", "Crop PDF", "Grayscale PDF", "Sign PDF",
       "PDF Metadata Editor", "Remove Blank Pages", "Page Size Converter",
       "PDF to JPG", "PDF to PNG", "Image to PDF", "OCR to Text",
+      "PNG to PDF", "JPG to PDF", "HEIC to PDF",
       "QR Code Generator", "QR Templates", "QR Code Scanner",
       "Barcode Generator", "Barcode Scanner",
       "Image Converter", "Image Resizer", "Photo Compressor",

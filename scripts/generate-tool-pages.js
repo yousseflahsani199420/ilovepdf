@@ -174,6 +174,48 @@ const tools = [
     ]
   },
   {
+    id: "pngtopdf",
+    slug: "png-to-pdf",
+    name: "PNG to PDF",
+    title: "Convert PNG to PDF",
+    description: "Convert one PNG image to a PDF file online.",
+    keywords: "png to pdf, convert png to pdf, image pdf converter",
+    howTo: [
+      "Open PNG to PDF.",
+      "Upload one PNG image.",
+      "Choose page size and orientation.",
+      "Process and download your PDF file."
+    ]
+  },
+  {
+    id: "jpgtopdf",
+    slug: "jpg-to-pdf",
+    name: "JPG to PDF",
+    title: "Convert JPG to PDF",
+    description: "Convert one JPG photo to a PDF file in seconds.",
+    keywords: "jpg to pdf, jpeg to pdf, photo to pdf",
+    howTo: [
+      "Open JPG to PDF.",
+      "Upload one JPG image.",
+      "Choose page size and orientation.",
+      "Process and download your PDF file."
+    ]
+  },
+  {
+    id: "heictopdf",
+    slug: "heic-to-pdf",
+    name: "HEIC to PDF",
+    title: "Convert HEIC to PDF",
+    description: "Convert iPhone HEIC images to PDF directly in your browser.",
+    keywords: "heic to pdf, iphone photo to pdf, convert heic image",
+    howTo: [
+      "Open HEIC to PDF.",
+      "Upload one HEIC or HEIF image.",
+      "Choose page size and orientation.",
+      "Process and download your PDF file."
+    ]
+  },
+  {
     id: "ocrtool",
     slug: "ocr-to-text",
     name: "OCR to Text",
@@ -486,6 +528,9 @@ const categoryById = {
   protect: "pdf",
   unlock: "pdf",
   imagetopdf: "image",
+  pngtopdf: "image",
+  jpgtopdf: "image",
+  heictopdf: "image",
   ocrtool: "image",
   imageconvert: "image",
   imageresize: "image",
@@ -512,6 +557,9 @@ const iconById = {
   pdftojpg: "&#128247;",
   pdftopng: "&#127912;",
   imagetopdf: "&#128444;",
+  pngtopdf: "&#128443;",
+  jpgtopdf: "&#128247;",
+  heictopdf: "&#128241;",
   ocrtool: "&#128269;",
   imageconvert: "&#8646;",
   imageresize: "&#8596;",
@@ -546,7 +594,6 @@ const toolEntries = tools.map((tool) => {
 });
 
 const css = `
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 :root{--bg:#f7fafc;--ink:#0f172a;--muted:#475569;--primary:#ff6b35;--secondary:#004e89;--card:#ffffff;--ring:rgba(0,78,137,0.12)}
 *{box-sizing:border-box}
 body{margin:0;font-family:"Space Grotesk",system-ui,sans-serif;background:linear-gradient(145deg,#fff8f2 0%,#f4fbff 50%,#f8fafc 100%);color:var(--ink)}
@@ -617,6 +664,9 @@ const pageTemplate = (tool) => {
   <meta property="twitter:description" content="${tool.description}">
   <meta property="twitter:image" content="${BASE_URL}/pdflogo.png">
   <link rel="icon" type="image/png" href="/pdflogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>${css}</style>
   <script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
@@ -718,6 +768,9 @@ const indexTemplate = () => {
   <meta property="twitter:description" content="Browse all FreePDF Pro SEO pages for PDF, QR, image, and video tools.">
   <meta property="twitter:image" content="${BASE_URL}/pdflogo.png">
   <link rel="icon" type="image/png" href="/pdflogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>${css}
   .groups{display:grid;gap:14px}
   .list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}

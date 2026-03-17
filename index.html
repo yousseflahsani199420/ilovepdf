@@ -18,6 +18,7 @@
     <meta name="description" content="Use FreePDF Pro to merge, split, compress, rotate, protect, reorder, watermark, and convert PDF files, plus QR tools, photo compressor, and video compressor online for free.">
     <meta name="keywords" content="pdf tools, qr code generator, qr code scanner, photo compressor, video compressor, merge pdf, split pdf, compress pdf, online converter">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FF6B35">
     
     <!-- Favicon for browser tab -->
     <link rel="icon" type="image/png" href="pdflogo.png">
@@ -42,6 +43,12 @@
     <meta property="twitter:image" content="https://www.i-lovepdf.site/pdflogo.png">
     
     <link rel="canonical" href="https://www.i-lovepdf.site/">
+    <link rel="preload" as="image" href="pdflogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- PDF-lib for real PDF processing -->
     <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
@@ -51,18 +58,8 @@
     <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.min.js"></script>
     <!-- QR generation -->
     <script src="vendor/qrcode.min.js"></script>
-    <!-- QR scan fallback -->
-    <script src="https://unpkg.com/jsqr@1.4.0/dist/jsQR.js"></script>
-    <!-- OCR -->
-    <script src="https://unpkg.com/tesseract.js@5.1.0/dist/tesseract.min.js"></script>
-    <!-- Barcode -->
-    <script src="https://unpkg.com/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
-    <!-- GIF conversion -->
-    <script src="https://unpkg.com/gif.js.optimized/dist/gif.js"></script>
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-        
         :root {
             --primary: #FF6B35;
             --secondary: #004E89;
@@ -990,7 +987,7 @@
     <nav>
         <div class="nav-container">
             <a href="#" class="logo" id="navLogo">
-                <img src="pdflogo.png" alt="FreePDF Pro Logo">
+                <img src="pdflogo.png" alt="FreePDF Pro Logo" width="32" height="32" decoding="async">
                 <span class="logo-text">FreePDF Pro</span>
             </a>
             <ul class="nav-links">
@@ -1007,7 +1004,7 @@
     
    <header class="hero">
     <div class="hero-content">
-        <img src="pdflogo.png" alt="FreePDF Pro" class="hero-logo">
+        <img src="pdflogo.png" alt="FreePDF Pro" class="hero-logo" width="150" height="150" fetchpriority="high" decoding="async">
         <div class="badge">
             <span>OK</span>
             <span>100% Free | No Registration | Secure</span>
@@ -1020,7 +1017,7 @@
     <section class="tools-section" id="tools">
         <div class="section-title">
             <h2>All Tools</h2>
-            <p>Browse 32+ tools grouped by PDF, Image, Video, and QR categories</p>
+            <p>Browse 35+ tools grouped by PDF, Image, Video, and QR categories</p>
         </div>
         
         <div id="toolsGrid" class="tools-groups">
@@ -1054,6 +1051,9 @@
                 <h3 class="tool-group-title">Image Tools</h3>
                 <div class="tools-grid">
                     <div class="tool-card" data-tool="imagetopdf"><div class="tool-icon">&#128444;</div><h3>Image to PDF</h3><p>Convert JPG and PNG files into a single PDF document.</p><span class="tool-tag">Convert</span></div>
+                    <div class="tool-card" data-tool="pngtopdf"><div class="tool-icon">&#128443;</div><h3>PNG to PDF</h3><p>Convert one PNG image to PDF with page size options.</p><span class="tool-tag">Convert</span></div>
+                    <div class="tool-card" data-tool="jpgtopdf"><div class="tool-icon">&#128247;</div><h3>JPG to PDF</h3><p>Convert one JPG image to PDF in one click.</p><span class="tool-tag">Convert</span></div>
+                    <div class="tool-card" data-tool="heictopdf"><div class="tool-icon">&#128241;</div><h3>HEIC to PDF</h3><p>Convert iPhone HEIC photos to PDF directly in browser.</p><span class="tool-tag">Convert</span></div>
                     <div class="tool-card" data-tool="ocrtool"><div class="tool-icon">&#128269;</div><h3>OCR to Text</h3><p>Extract text from images or PDFs using OCR.</p><span class="tool-tag">AI</span></div>
                     <div class="tool-card" data-tool="imageconvert"><div class="tool-icon">&#8646;</div><h3>Image Converter</h3><p>Convert one image between JPG, PNG, and WEBP formats.</p><span class="tool-tag">Convert</span></div>
                     <div class="tool-card" data-tool="imageresize"><div class="tool-icon">&#8596;</div><h3>Image Resizer</h3><p>Resize one image with max width and height limits.</p><span class="tool-tag">Resize</span></div>
@@ -1179,7 +1179,7 @@
 
     <section class="seo-content" id="about">
         <h2>Free PDF, QR, and Media Tools Online</h2>
-        <p>FreePDF Pro includes 32+ online tools to manage documents and media quickly. You can <strong>merge PDF</strong>, <strong>split PDF</strong>, <strong>compress PDF</strong>, <strong>crop PDF</strong>, <strong>grayscale PDF</strong>, <strong>convert PDF to JPG</strong>, <strong>convert PDF to PNG</strong>, and <strong>convert images to PDF</strong> instantly.</p>
+        <p>FreePDF Pro includes 35+ online tools to manage documents and media quickly. You can <strong>merge PDF</strong>, <strong>split PDF</strong>, <strong>compress PDF</strong>, <strong>crop PDF</strong>, <strong>grayscale PDF</strong>, <strong>convert PDF to JPG</strong>, <strong>convert PDF to PNG</strong>, <strong>convert PNG to PDF</strong>, <strong>convert JPG to PDF</strong>, <strong>convert HEIC to PDF</strong>, and <strong>convert images to PDF</strong> instantly.</p>
 
         <p>Advanced tools let you <strong>sign PDF</strong>, <strong>edit metadata</strong>, <strong>remove blank pages</strong>, <strong>reorder pages</strong>, <strong>add page numbers</strong>, <strong>add watermark</strong>, <strong>protect PDF</strong>, <strong>unlock PDF</strong>, <strong>extract PDF text</strong>, <strong>run OCR to text</strong>, <strong>generate QR templates</strong>, <strong>scan barcodes</strong>, <strong>convert images</strong>, <strong>resize images</strong>, <strong>compress photos</strong>, and <strong>convert video to GIF</strong>. Each tool has its own static SEO page for better indexing.</p>
 
@@ -1203,7 +1203,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="pdflogo.png" alt="FreePDF Pro">
+                <img src="pdflogo.png" alt="FreePDF Pro" width="32" height="32" loading="lazy" decoding="async">
                 <span>FreePDF Pro</span>
             </div>
             <div class="footer-links">

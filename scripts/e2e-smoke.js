@@ -115,7 +115,7 @@ async function run() {
 
     const requiredCards = [
       "cropdf", "grayscalepdf", "signpdf", "metadatapdf", "removeblankpdf", "resizepdfpages",
-      "ocrtool", "qrtemplates", "barcodegen", "barcodescan",
+      "ocrtool", "pngtopdf", "jpgtopdf", "heictopdf", "qrtemplates", "barcodegen", "barcodescan",
       "imageconvert", "imageresize", "videotogif",
       "qrcreate", "qrscan", "photocompress", "videocompress"
     ];

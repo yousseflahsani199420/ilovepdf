@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.i-lovepdf.site/</loc>
-    <lastmod>2026-03-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.i-lovepdf.site/tools/</loc>
-    <lastmod>2026-03-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
     <loc>https://www.i-lovepdf.site/about/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/about/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/about/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/about/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/about/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/about/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
@@ -25,16 +43,34 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.i-lovepdf.site/guides/</loc>
-    <lastmod>2026-03-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.i-lovepdf.site/guides/compress-pdf-files-online-free/</loc>
+    <loc>https://www.i-lovepdf.site/fr/contact/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/contact/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/contact/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/contact/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/contact/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.i-lovepdf.site/guides/best-free-pdf-tools-online-2026/</loc>
@@ -43,7 +79,67 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.i-lovepdf.site/guides/merge-pdf-files-step-by-step/</loc>
+    <loc>https://www.i-lovepdf.site/fr/guides/best-free-pdf-tools-online-2026/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/guides/best-free-pdf-tools-online-2026/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/guides/best-free-pdf-tools-online-2026/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/guides/best-free-pdf-tools-online-2026/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/guides/best-free-pdf-tools-online-2026/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/guides/compress-pdf-files-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/guides/compress-pdf-files-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/guides/compress-pdf-files-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/guides/compress-pdf-files-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/guides/compress-pdf-files-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/guides/compress-pdf-files-online-free/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -55,13 +151,211 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/guides/convert-pdf-to-word-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/guides/convert-pdf-to-word-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/guides/convert-pdf-to-word-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/guides/convert-pdf-to-word-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/guides/convert-pdf-to-word-online-free/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/guides/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/guides/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/guides/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/guides/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/guides/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/guides/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/guides/merge-pdf-files-step-by-step/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/guides/merge-pdf-files-step-by-step/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/guides/merge-pdf-files-step-by-step/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/guides/merge-pdf-files-step-by-step/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/guides/merge-pdf-files-step-by-step/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/guides/merge-pdf-files-step-by-step/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/guides/reduce-pdf-file-size-for-email/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/guides/reduce-pdf-file-size-for-email/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/guides/reduce-pdf-file-size-for-email/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/guides/reduce-pdf-file-size-for-email/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/guides/reduce-pdf-file-size-for-email/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/guides/reduce-pdf-file-size-for-email/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/add-page-numbers-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/add-page-numbers-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/add-page-numbers-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/add-page-numbers-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/add-page-numbers-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/add-page-numbers-to-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -73,7 +367,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/add-watermark-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/add-watermark-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/add-watermark-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/add-watermark-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/add-watermark-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/barcode-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/barcode-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/barcode-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/barcode-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/barcode-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/barcode-generator/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -85,7 +439,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/barcode-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/barcode-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/barcode-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/barcode-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/barcode-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/compress-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/compress-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/compress-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/compress-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/compress-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/compress-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -97,7 +511,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/crop-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/crop-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/crop-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/crop-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/crop-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/delete-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/delete-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/delete-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/delete-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/delete-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/delete-pdf-pages/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -109,7 +583,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/extract-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/extract-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/extract-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/extract-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/extract-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/grayscale-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/grayscale-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/grayscale-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/grayscale-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/grayscale-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/grayscale-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -121,7 +655,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/heic-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/heic-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/heic-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/heic-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/heic-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/image-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/image-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/image-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/image-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/image-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/image-converter/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -133,13 +727,139 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/image-resizer/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/image-resizer/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/image-resizer/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/image-resizer/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/image-resizer/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/image-to-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/image-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/image-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/image-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/image-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/image-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/tools/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/jpg-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/jpg-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/jpg-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/jpg-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/jpg-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/jpg-to-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -151,7 +871,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/merge-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/merge-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/merge-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/merge-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/merge-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/ocr-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/ocr-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/ocr-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/ocr-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/ocr-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/ocr-to-text/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -163,7 +943,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/pdf-metadata-editor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/pdf-metadata-editor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/pdf-metadata-editor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/pdf-metadata-editor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/pdf-metadata-editor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/pdf-page-size-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/pdf-page-size-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/pdf-page-size-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/pdf-page-size-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/pdf-page-size-converter/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/pdf-page-size-converter/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -175,7 +1015,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/pdf-to-jpg/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/pdf-to-jpg/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/pdf-to-jpg/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/pdf-to-jpg/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/pdf-to-jpg/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/pdf-to-png/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/pdf-to-png/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/pdf-to-png/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/pdf-to-png/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/pdf-to-png/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/pdf-to-png/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -187,7 +1087,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/pdf-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/pdf-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/pdf-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/pdf-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/pdf-to-text/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/photo-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/photo-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/photo-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/photo-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/photo-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/photo-compressor/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -199,7 +1159,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/png-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/png-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/png-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/png-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/png-to-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/protect-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/protect-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/protect-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/protect-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/protect-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/protect-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -211,7 +1231,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/qr-code-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/qr-code-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/qr-code-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/qr-code-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/qr-code-generator/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/qr-code-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/qr-code-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/qr-code-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/qr-code-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/qr-code-scanner/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/qr-code-scanner/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -223,7 +1303,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/qr-templates/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/qr-templates/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/qr-templates/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/qr-templates/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/qr-templates/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/remove-blank-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/remove-blank-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/remove-blank-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/remove-blank-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/remove-blank-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/remove-blank-pdf-pages/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -235,7 +1375,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/reorder-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/reorder-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/reorder-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/reorder-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/reorder-pdf-pages/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/rotate-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/rotate-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/rotate-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/rotate-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/rotate-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/rotate-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -247,7 +1447,67 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/sign-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/sign-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/sign-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/sign-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/sign-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/split-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/split-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/split-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/split-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/split-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/split-pdf/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -259,13 +1519,103 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/unlock-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/unlock-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/unlock-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/unlock-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/unlock-pdf/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/video-compressor/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/video-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/video-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/video-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/video-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/video-compressor/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.i-lovepdf.site/tools/video-to-gif/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/fr/tools/video-to-gif/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/ar/tools/video-to-gif/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/hi/tools/video-to-gif/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/id/tools/video-to-gif/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.i-lovepdf.site/zh/tools/video-to-gif/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

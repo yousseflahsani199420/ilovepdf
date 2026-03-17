@@ -20,9 +20,7 @@ app.use(
           "'unsafe-inline'",
           "https://unpkg.com",
           "https://www.googletagmanager.com",
-          "https://www.google-analytics.com",
-          "https://translate.google.com",
-          "https://translate.googleapis.com"
+          "https://www.google-analytics.com"
         ],
 
         styleSrc: [
@@ -41,25 +39,19 @@ app.use(
           "data:",
           "blob:",
           "https://www.google-analytics.com",
-          "https://www.googletagmanager.com",
-          "https://translate.google.com",
-          "https://translate.googleapis.com",
-          "https://www.gstatic.com"
+          "https://www.googletagmanager.com"
         ],
 
         connectSrc: [
           "'self'",
           "https://www.google-analytics.com",
           "https://www.googletagmanager.com",
-          "https://fonts.gstatic.com",
-          "https://translate.google.com",
-          "https://translate.googleapis.com"
+          "https://fonts.gstatic.com"
         ],
 
         frameSrc: [
           "'self'",
-          "https://www.googletagmanager.com",
-          "https://translate.google.com"
+          "https://www.googletagmanager.com"
         ],
 
         objectSrc: ["'none'"],

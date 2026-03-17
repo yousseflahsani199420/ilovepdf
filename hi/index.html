@@ -1,0 +1,1261 @@
+<!DOCTYPE html><html lang="hi"><head>
+    
+    <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-17966685744"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17966685744');
+</script>
+<!-- Event snippet for Page vue conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17966685744/gx2DCM-MpPwbELC8l_dC',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FreePDF Pro - PDF, QR, Photo and Video Tools Online</title>
+    <meta name="description" content="मर्ज, स्प्लिट, कंप्रेस, रोटेट, प्रोटेक्ट, रीऑर्डर, वॉटरमार्क और पीडीएफ फाइलों को कनवर्ट करने के लिए फ्रीपीडीएफ प्रो का उपयोग करें, साथ ही क्यूआर टूल्स, फोटो कंप्रेसर और वीडियो कंप्रेसर को मुफ्त में ऑनलाइन कनवर्ट करें।">
+    <meta name="keywords" content="पीडीएफ उपकरण, क्यूआर कोड जनरेटर, क्यूआर कोड स्कैनर, फोटो कंप्रेसर, वीडियो कंप्रेसर, मर्ज पीडीएफ, स्प्लिट पीडीएफ, कंप्रेस पीडीएफ, ऑनलाइन कनवर्टर">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FF6B35">
+    
+    <!-- Favicon for browser tab -->
+    <link rel="icon" type="image/png" href="pdflogo.png">
+    <link rel="shortcut icon" type="image/png" href="pdflogo.png">
+    <link rel="apple-touch-icon" href="pdflogo.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.i-lovepdf.site/hi/">
+    <meta property="og:title" content="फ्रीपीडीएफ प्रो - पीडीएफ, क्यूआर, फोटो और वीडियो टूल्स">
+    <meta property="og:description" content="मर्ज, स्प्लिट, कंप्रेस, कन्वर्ट, वॉटरमार्क पीडीएफ, क्यूआर जेनरेट करें और मीडिया को मुफ्त में ऑनलाइन कंप्रेस करें।">
+    <meta property="og:image" content="https://www.i-lovepdf.site/pdflogo.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:site_name" content="FreePDF Pro">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.i-lovepdf.site/hi/">
+    <meta property="twitter:title" content="फ्रीपीडीएफ प्रो - पीडीएफ, क्यूआर, फोटो और वीडियो टूल्स">
+    <meta property="twitter:description" content="मर्ज, स्प्लिट, कंप्रेस, कन्वर्ट, वॉटरमार्क पीडीएफ, क्यूआर जेनरेट करें और मीडिया को मुफ्त में ऑनलाइन कंप्रेस करें।">
+    <meta property="twitter:image" content="https://www.i-lovepdf.site/pdflogo.png">
+    
+    <link rel="canonical" href="https://www.i-lovepdf.site/hi/">
+  <link rel="alternate" hreflang="en" href="https://www.i-lovepdf.site/">
+  <link rel="alternate" hreflang="fr" href="https://www.i-lovepdf.site/fr/">
+  <link rel="alternate" hreflang="ar" href="https://www.i-lovepdf.site/ar/">
+  <link rel="alternate" hreflang="hi" href="https://www.i-lovepdf.site/hi/">
+  <link rel="alternate" hreflang="id" href="https://www.i-lovepdf.site/id/">
+  <link rel="alternate" hreflang="zh-CN" href="https://www.i-lovepdf.site/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://www.i-lovepdf.site/">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <link rel="preload" as="image" href="pdflogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin="">
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- PDF-lib for real PDF processing -->
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <!-- PDF.js for rendering -->
+    <script src="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+    <!-- FileSaver for downloads -->
+    <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <!-- QR generation -->
+    <script src="vendor/qrcode.min.js"></script>
+    
+    <style>
+        :root {
+            --primary: #FF6B35;
+            --secondary: #004E89;
+            --accent: #1A659E;
+            --dark: #0F172A;
+            --light: #F8FAFC;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --gradient-1: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --gradient-2: linear-gradient(135deg, #004E89 0%, #1A659E 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 78, 137, 0.1) 0%, transparent 50%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        
+        .logo img {
+            height: 32px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .logo-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.2rem;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+    .hero {
+    text-align: center; /* centers everything inside hero */
+    padding: 20px;
+}
+
+.hero-logo {
+    display: block;
+    margin: 0 auto 10px; /* centers logo and adds space below */
+    max-width: 150px; /* adjust size as needed */
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* space between checkmark and text */
+    font-weight: bold;
+    background-color: #f0f0f0; /* optional styling */
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+        
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(135deg, var(--dark) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1rem;
+            color: #64748B;
+            margin-bottom: 1.5rem;
+            padding: 0 0.5rem;
+        }
+        
+        .tools-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .tools-groups {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .tool-group {
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 16px;
+            padding: 1rem;
+        }
+
+        .tool-group-title {
+            margin: 0 0 0.9rem;
+            font-size: 1.05rem;
+            color: var(--secondary);
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title h2 {
+            font-size: 1.75rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title p {
+            color: #64748B;
+            font-size: 0.95rem;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: rgba(255, 107, 53, 0.2);
+        }
+        
+        .tool-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .tool-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            line-height: 1;
+            margin-bottom: 0.75rem;
+            color: white;
+        }
+        
+        .tool-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+            color: var(--dark);
+        }
+        
+        .tool-card p {
+            color: #64748B;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+        
+        .tool-tag {
+            display: inline-block;
+            background: rgba(255, 107, 53, 0.1);
+            color: var(--primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-top: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tool-workspace {
+            background: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 1rem auto;
+            max-width: 1000px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            display: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tool-workspace.active {
+            display: block;
+            animation: slideUp 0.5s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .workspace-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #F1F5F9;
+        }
+        
+        .workspace-title {
+            font-size: 1.25rem;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .close-btn {
+            background: #F1F5F9;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            color: #64748B;
+            transition: all 0.3s;
+        }
+        
+        .close-btn:hover {
+            background: #FEE2E2;
+            color: var(--danger);
+            transform: rotate(90deg);
+        }
+        
+        .upload-container {
+            border: 3px dashed #CBD5E1;
+            border-radius: 16px;
+            padding: 2rem 1rem;
+            text-align: center;
+            transition: all 0.3s;
+            background: #F8FAFC;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .upload-container.dragover {
+            border-color: var(--primary);
+            background: rgba(255, 107, 53, 0.05);
+            transform: scale(1.02);
+        }
+        
+        .upload-container.has-files {
+            border-style: solid;
+            border-color: var(--success);
+            background: #F0FDF4;
+        }
+        
+        .upload-content {
+            pointer-events: none;
+        }
+        
+        .upload-container.has-files .upload-content {
+            display: none;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .upload-icon {
+            font-size: 3rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+        
+        .upload-text {
+            font-size: 1.1rem;
+            color: var(--dark);
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        
+        .upload-subtext {
+            color: #64748B;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .btn {
+            background: var(--gradient-1);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            box-shadow: 0 4px 6px -1px rgba(255, 107, 53, 0.3);
+            pointer-events: auto;
+            min-width: 120px;
+            white-space: nowrap;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--gradient-2);
+            box-shadow: 0 4px 6px -1px rgba(0, 78, 137, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 78, 137, 0.4);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .features {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 1rem;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .features::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .features-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        
+        .feature-item:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .feature-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-item p {
+            color: #94A3B8;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background: #020617;
+            color: #94A3B8;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .footer-logo img {
+            height: 28px;
+            width: auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #CBD5E1;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.85rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .loader {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #F1F5F9;
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 1.5rem auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .progress-container {
+            display: none;
+            width: 100%;
+            background: #F1F5F9;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+        }
+        
+        .progress-bar {
+            width: 0%;
+            height: 28px;
+            background: var(--gradient-1);
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        
+        .result-area {
+            display: none;
+            text-align: center;
+            padding: 1.5rem;
+            background: #F0FDF4;
+            border-radius: 15px;
+            border: 2px solid var(--success);
+            margin-top: 1.5rem;
+        }
+        
+        .success-icon {
+            font-size: 3rem;
+            color: var(--success);
+            margin-bottom: 0.75rem;
+        }
+        
+        .file-list {
+            margin: 0.75rem 0;
+            text-align: left;
+            max-height: 250px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 10px;
+            padding: 0.75rem;
+        }
+        
+        .file-item {
+            background: #F8FAFC;
+            padding: 0.6rem;
+            margin: 0.4rem 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #E2E8F0;
+            font-size: 0.85rem;
+        }
+        
+        .file-item button {
+            background: var(--danger);
+            color: white;
+            border: none;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+        
+        .file-item button:hover {
+            background: #DC2626;
+        }
+        
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 0.75rem;
+            margin: 0.75rem 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .preview-item {
+            position: relative;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .preview-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+        
+        .preview-item .page-num {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            text-align: center;
+            padding: 0.2rem;
+            font-size: 0.75rem;
+        }
+        
+        .options-panel {
+            background: #F8FAFC;
+            border-radius: 15px;
+            padding: 1.25rem;
+            margin: 0.75rem 0;
+            border: 2px solid #E2E8F0;
+        }
+        
+        .options-panel h4 {
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+        
+        .option-group {
+            margin-bottom: 0.75rem;
+        }
+        
+        .option-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+        
+        .option-group input, .option-group select {
+            width: 100%;
+            padding: 0.6rem;
+            border: 2px solid #E2E8F0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+        
+        .quality-slider {
+            width: 100%;
+            margin: 0.4rem 0;
+        }
+        
+        .seo-content {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            color: #475569;
+        }
+        
+        .seo-content h2 {
+            color: var(--dark);
+            margin: 1.5rem 0 0.75rem;
+            font-size: 1.5rem;
+        }
+        
+        .seo-content p {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .seo-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .seo-content li {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+        
+        .error-message {
+            background: #FEE2E2;
+            color: var(--danger);
+            padding: 0.75rem;
+            border-radius: 10px;
+            margin: 0.75rem 0;
+            display: none;
+            border-left: 4px solid var(--danger);
+            font-size: 0.9rem;
+        }
+        
+        .drag-handle {
+            cursor: move;
+            color: #94A3B8;
+            margin-right: 0.4rem;
+        }
+        
+        .page-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+            align-items: center;
+        }
+        
+        .page-controls .btn {
+            width: 100%;
+            max-width: 200px;
+        }
+        
+        .file-list-container {
+            width: 100%;
+            margin-bottom: 0.75rem;
+        }
+        
+        .supported-formats {
+            margin-top: 0.75rem;
+            color: #94A3B8;
+            font-size: 0.8rem;
+        }
+        
+        /* Mobile-specific improvements */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .logo {
+                font-size: 1.25rem;
+            }
+            
+            .logo img {
+                height: 28px;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                padding: 2rem 1rem 1.5rem;
+            }
+            
+            .hero-logo {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero p {
+                font-size: 0.9rem;
+            }
+            
+            .badge {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.6rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+                margin-bottom: 2rem;
+            }
+            
+            .tool-card {
+                padding: 1.25rem;
+            }
+            
+            .tool-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.25rem;
+            }
+            
+            .tool-card h3 {
+                font-size: 1rem;
+            }
+            
+            .tool-card p {
+                font-size: 0.8rem;
+            }
+            
+            .tool-workspace {
+                padding: 1rem;
+                margin: 0.5rem;
+                border-radius: 16px;
+            }
+            
+            .workspace-title {
+                font-size: 1.1rem;
+            }
+            
+            .upload-container {
+                padding: 1.5rem 1rem;
+            }
+            
+            .upload-icon {
+                font-size: 2.5rem;
+            }
+            
+            .upload-text {
+                font-size: 1rem;
+            }
+            
+            .btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+                min-width: 100px;
+            }
+            
+            .features {
+                padding: 2rem 1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .feature-item {
+                padding: 1.25rem;
+            }
+            
+            .feature-icon {
+                font-size: 2rem;
+            }
+            
+            .result-area {
+                padding: 1rem;
+            }
+            
+            .success-icon {
+                font-size: 2.5rem;
+            }
+            
+            .page-controls {
+                flex-direction: column;
+            }
+            
+            .page-controls .btn {
+                width: 100%;
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.25rem;
+            }
+            
+            .tool-card {
+                padding: 1rem;
+            }
+            
+            .btn {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="/hi/" class="logo" id="navLogo">
+                <img src="pdflogo.png" alt="फ्रीपीडीएफ प्रो लोगो" width="32" height="32" decoding="async">
+                <span class="logo-text">फ्रीपीडीएफ प्रो</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/hi/#tools">All Tools</a></li>
+                <li><a href="/hi/#pdf-tools">PDF</a></li>
+                <li><a href="/hi/#image-tools">छवि</a></li>
+                <li><a href="/hi/#video-tools">वीडियो</a></li>
+                <li><a href="/hi/#qr-tools">QR</a></li>
+                <li><a href="/hi/#features">विशेषताएँ</a></li>
+                <li><a href="/hi/guides/">गाइड</a></li>
+                <li><a href="/hi/about/">हमारे बारे में</a></li>
+                <li><a href="/hi/contact/">संपर्क</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+   <header class="hero">
+    <div class="hero-content">
+        <img src="pdflogo.png" alt="फ्रीपीडीएफ प्रो" class="hero-logo" width="150" height="150" fetchpriority="high" decoding="async">
+        <div class="badge">
+            <span>ठीक है</span>
+            <span>100% मुफ़्त | कोई पंजीकरण नहीं | सुरक्षित</span>
+        </div>
+    </div>
+    <h1>निःशुल्क ऑनलाइन पीडीएफ उपकरण</h1>
+    <p>पीडीएफ फाइलों को आसानी से संपादित करें, रूपांतरित करें, संपीड़ित करें और प्रबंधित करें। प्रोफेशनल-ग्रेड टूल आपके ब्राउज़र में तुरंत उपलब्ध हैं।</p>
+    </header>
+    
+    <section class="tools-section" id="tools">
+        <div class="section-title">
+            <h2>All Tools</h2>
+            <p>पीडीएफ, छवि, वीडियो और क्यूआर श्रेणियों द्वारा समूहीकृत 35+ टूल ब्राउज़ करें</p>
+        </div>
+        
+        <div id="toolsGrid" class="tools-groups">
+            <div class="tool-group" id="pdf-tools">
+                <h3 class="tool-group-title">पीडीएफ उपकरण</h3>
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="pdftopng"><div class="tool-icon">🎨</div><h3>पीडीएफ से पीएनजी</h3><p>चयनित पीडीएफ पेज को पीएनजी छवि फ़ाइल में बदलें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="pngtopdf"><div class="tool-icon">🖻</div><h3>पीएनजी से पीडीएफ</h3><p>पेज आकार विकल्पों के साथ एक पीएनजी छवि को पीडीएफ में बदलें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="heictopdf"><div class="tool-icon">📱</div><h3>HEIC से पीडीएफ</h3><p>iPhone HEIC फ़ोटो को सीधे ब्राउज़र में PDF में कनवर्ट करें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="jpgtopdf"><div class="tool-icon">📷</div><h3>जेपीजी से पीडीएफ</h3><p>एक क्लिक में एक JPG छवि को पीडीएफ में बदलें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="merge"><div class="tool-icon">📎</div><h3>पीडीएफ मर्ज करें</h3><p>कुछ ही सेकंड में एकाधिक पीडीएफ फाइलों को एक दस्तावेज़ में संयोजित करें।</p><span class="tool-tag">लोकप्रिय</span></div>
+                    <div class="tool-card" data-tool="split"><div class="tool-icon">✂</div><h3>पीडीएफ को विभाजित करें</h3><p>Split one PDF by page range into a new file instantly.</p><span class="tool-tag">Essential</span></div>
+                    <div class="tool-card" data-tool="compress"><div class="tool-icon">🗗</div><h3>पीडीएफ को कंप्रेस करें</h3><p>Reduce PDF file size for email and web uploads.</p><span class="tool-tag">Trending</span></div>
+                    <div class="tool-card" data-tool="cropdf"><div class="tool-icon">✂</div><h3>Crop PDF</h3><p>Crop page margins and keep only the content area.</p><span class="tool-tag">Edit</span></div>
+                    <div class="tool-card" data-tool="grayscalepdf"><div class="tool-icon">◑</div><h3>Grayscale PDF</h3><p>Convert color PDFs to black and white output.</p><span class="tool-tag">Optimize</span></div>
+                    <div class="tool-card" data-tool="signpdf"><div class="tool-icon">✎</div><h3>Add Signature</h3><p>Draw or upload signature and stamp your PDF.</p><span class="tool-tag">Edit</span></div>
+                    <div class="tool-card" data-tool="metadatapdf"><div class="tool-icon">📝</div><h3>PDF Metadata Editor</h3><p>Edit title, author, subject, and keywords.</p><span class="tool-tag">Edit</span></div>
+                    <div class="tool-card" data-tool="removeblankpdf"><div class="tool-icon">🗑</div><h3>Remove Blank Pages</h3><p>Detect and remove blank pages automatically.</p><span class="tool-tag">Organize</span></div>
+                    <div class="tool-card" data-tool="resizepdfpages"><div class="tool-icon">📄</div><h3>Page Size Converter</h3><p>पृष्ठों को A4, अक्षर या कानूनी आकार में बदलें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="pdftojpg"><div class="tool-icon">📷</div><h3>पीडीएफ से जेपीजी</h3><p>चयनित पीडीएफ पेज को जेपीजी छवि फ़ाइल में बदलें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="rotate"><div class="tool-icon">↻</div><h3>पीडीएफ घुमाएँ</h3><p>सभी पृष्ठों को 90, 180, या 270 डिग्री तक तेजी से घुमाएँ।</p><span class="tool-tag">उपयोगिता</span></div>
+                    <div class="tool-card" data-tool="deletepages"><div class="tool-icon">🗑</div><h3>पीडीएफ पेज हटाएं</h3><p>पृष्ठ श्रेणियों का उपयोग करके पीडीएफ से चयनित पृष्ठ हटाएँ।</p><span class="tool-tag">Organize</span></div>
+                    <div class="tool-card" data-tool="extractpages"><div class="tool-icon">📦</div><h3>पीडीएफ पेज निकालें</h3><p>चयनित पृष्ठों को निकालें और उन्हें एक नई पीडीएफ फ़ाइल के रूप में सहेजें।</p><span class="tool-tag">Organize</span></div>
+                    <div class="tool-card" data-tool="reorder"><div class="tool-icon">⇅</div><h3>पीडीएफ पेजों को पुनः व्यवस्थित करें</h3><p>पीडीएफ को पुनर्व्यवस्थित करने के लिए 3,1,2 जैसे कस्टम पेज ऑर्डर सेट करें।</p><span class="tool-tag">Organize</span></div>
+                    <div class="tool-card" data-tool="pagenumbers"><div class="tool-icon">#</div><h3>पेज नंबर जोड़ें</h3><p>प्रत्येक पृष्ठ पर कस्टम स्थिति के साथ पृष्ठ क्रमांक अंकित करें।</p><span class="tool-tag">Edit</span></div>
+                    <div class="tool-card" data-tool="watermark"><div class="tool-icon">💧</div><h3>वॉटरमार्क जोड़ें</h3><p>Add text watermark to every page for branding or draft marks.</p><span class="tool-tag">Edit</span></div>
+                    <div class="tool-card" data-tool="pdftotext"><div class="tool-icon">📄</div><h3>PDF to Text</h3><p>Extract text from PDF pages into a single TXT file.</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="protect"><div class="tool-icon">🔒</div><h3>पीडीएफ को सुरक्षित रखें</h3><p>Add password protection and lock document permissions.</p><span class="tool-tag">Security</span></div>
+                    <div class="tool-card" data-tool="unlock"><div class="tool-icon">🔓</div><h3>Unlock PDF</h3><p>Remove password protection from PDF files you own.</p><span class="tool-tag">Security</span></div>
+                </div>
+            </div>
+
+            <div class="tool-group" id="image-tools">
+                <h3 class="tool-group-title">Image Tools</h3>
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="imagetopdf"><div class="tool-icon">🖼</div><h3>पीडीएफ में छवि</h3><p>JPG और PNG फ़ाइलों को एक ही PDF दस्तावेज़ में बदलें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="ocrtool"><div class="tool-icon">🔍</div><h3>टेक्स्ट के लिए ओसीआर</h3><p>OCR का उपयोग करके छवियों या PDF से टेक्स्ट निकालें।</p><span class="tool-tag">ऐ</span></div>
+                    <div class="tool-card" data-tool="imageconvert"><div class="tool-icon">⇆</div><h3>छवि परिवर्तक</h3><p>एक छवि को JPG, PNG और WEBP प्रारूपों के बीच कनवर्ट करें।</p><span class="tool-tag">बदलना</span></div>
+                    <div class="tool-card" data-tool="imageresize"><div class="tool-icon">↔</div><h3>छवि पुनर्विक्रेता</h3><p>अधिकतम चौड़ाई और ऊंचाई सीमा के साथ एक छवि का आकार बदलें।</p><span class="tool-tag">आकार</span></div>
+                    <div class="tool-card" data-tool="photocompress"><div class="tool-icon">📸</div><h3>फोटो कंप्रेसर</h3><p>एक फोटो को संपीड़ित करें और गुणवत्ता बनाए रखते हुए छवि का आकार कम करें।</p><span class="tool-tag">छवि</span></div>
+                </div>
+            </div>
+
+            <div class="tool-group" id="video-tools">
+                <h3 class="tool-group-title">वीडियो उपकरण</h3>
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="videocompress"><div class="tool-icon">🎥</div><h3>Video Compressor</h3><p>Compress videos in your browser with adjustable quality.</p><span class="tool-tag">वीडियो</span></div>
+                    <div class="tool-card" data-tool="videotogif"><div class="tool-icon">🎬</div><h3>Video to GIF</h3><p>Convert short videos to GIF animations quickly.</p><span class="tool-tag">बदलना</span></div>
+                </div>
+            </div>
+
+            <div class="tool-group" id="qr-tools">
+                <h3 class="tool-group-title">QR Tools</h3>
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="qrcreate"><div class="tool-icon">🔑</div><h3>QR Code Generator</h3><p>Generate QR codes from text, links, or contact details.</p><span class="tool-tag">QR</span></div>
+                    <div class="tool-card" data-tool="qrtemplates"><div class="tool-icon">🧬</div><h3>QR Templates</h3><p>Create Wi-Fi, vCard, and WhatsApp QR codes instantly.</p><span class="tool-tag">QR</span></div>
+                    <div class="tool-card" data-tool="qrscan"><div class="tool-icon">🔎</div><h3>QR Code Scanner</h3><p>Upload an image and decode QR content instantly.</p><span class="tool-tag">QR</span></div>
+                    <div class="tool-card" data-tool="barcodegen"><div class="tool-icon">▒</div><h3>Barcode Generator</h3><p>Create CODE128, EAN13, UPC, and CODE39 barcodes.</p><span class="tool-tag">Barcode</span></div>
+                    <div class="tool-card" data-tool="barcodescan"><div class="tool-icon">🔎</div><h3>Barcode Scanner</h3><p>Decode barcodes from uploaded images.</p><span class="tool-tag">Barcode</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tool Workspace -->
+        <div id="workspace" class="tool-workspace">
+            <div class="workspace-header">
+                <h2 class="workspace-title" id="workspace-title">Tool Name</h2>
+                <button class="close-btn" id="closeBtn">X</button>
+            </div>
+            
+            <div class="error-message" id="errorMessage"></div>
+            
+            <!-- File Input (Hidden but persistent) -->
+            <input type="file" id="fileInput" class="file-input" multiple="">
+            
+            <!-- Upload Area -->
+            <div class="upload-container" id="uploadContainer">
+                
+                <!-- Initial Upload State -->
+                <div class="upload-content" id="initialUpload">
+                    <span class="upload-icon">Upload</span>
+                    <div class="upload-text">Drag &amp; Drop your files here</div>
+                    <div class="upload-subtext">or click to browse from your computer</div>
+                    <button class="btn" id="selectFilesBtn">Select Files</button>
+                    <div class="supported-formats" id="fileTypes">Supported: PDF, JPG, PNG</div>
+                </div>
+                
+                <!-- File List State (Hidden initially) -->
+                <div class="file-list-container" id="fileListContainer" style="display: none;">
+                    <div class="file-list" id="fileList"></div>
+                    <div class="page-controls">
+                        <button class="btn" id="addMoreBtn">Add More</button>
+                        <button class="btn btn-secondary" id="processBtn">Process</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Options Panel (Dynamic based on tool) -->
+            <div id="optionsPanel" class="options-panel" style="display: none;">
+                <!-- Content injected by JS -->
+            </div>
+            
+            <!-- Preview Area -->
+            <div id="previewArea" class="preview-grid" style="display: none;"></div>
+            
+            <div class="loader" id="loader"></div>
+            
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar">0%</div>
+            </div>
+            
+            <div class="result-area" id="resultArea">
+                <div class="success-icon">Done</div>
+                <h3>प्रसंस्करण पूर्ण!</h3>
+                <div class="file-list" id="resultFileList"></div>
+                <div class="page-controls">
+                    <button class="btn" id="downloadBtn">डाउनलोड करना</button>
+                    <button class="btn btn-secondary" id="processAnotherBtn">एक और</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-title" style="color: white;">
+                <h2>फ्रीपीडीएफ प्रो क्यों चुनें?</h2>
+                <p style="color: #94A3B8;">तेज़ और सुरक्षित पीडीएफ प्रोसेसिंग के लिए उपयोगकर्ताओं द्वारा विश्वसनीय</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">ताला</div>
+                    <h3>सुरक्षित प्रसंस्करण</h3>
+                    <p>फ़ाइलें आपके ब्राउज़र में संसाधित होती हैं ताकि आपके दस्तावेज़ निजी रहें।</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">तेज़</div>
+                    <h3>बिजली की तेजी</h3>
+                    <p>अनुकूलित प्रसंस्करण बड़े पीडीएफ के साथ भी आपके वर्कफ़्लो को त्वरित रखता है।</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">मुक्त</div>
+                    <h3>100% मुफ़्त</h3>
+                    <p>No hidden costs, no watermarks, and no account required.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">MOBILE</div>
+                    <h3>Works Everywhere</h3>
+                    <p>Use it on Windows, Mac, Linux, iOS, and Android.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seo-content" id="about">
+        <h2>Free PDF, QR, and Media Tools Online</h2>
+        <p>FreePDF Pro includes 35+ online tools to manage documents and media quickly. You can <strong>merge PDF</strong>, <strong>split PDF</strong>, <strong>compress PDF</strong>, <strong>crop PDF</strong>, <strong>grayscale PDF</strong>, <strong>convert PDF to JPG</strong>, <strong>convert PDF to PNG</strong>, <strong>convert PNG to PDF</strong>, <strong>convert JPG to PDF</strong>, <strong>convert HEIC to PDF</strong>, and <strong>convert images to PDF</strong> instantly.</p>
+
+        <p>Advanced tools let you <strong>sign PDF</strong>, <strong>edit metadata</strong>, <strong>remove blank pages</strong>, <strong>reorder pages</strong>, <strong>add page numbers</strong>, <strong>add watermark</strong>, <strong>protect PDF</strong>, <strong>unlock PDF</strong>, <strong>extract PDF text</strong>, <strong>run OCR to text</strong>, <strong>generate QR templates</strong>, <strong>scan barcodes</strong>, <strong>convert images</strong>, <strong>resize images</strong>, <strong>compress photos</strong>, and <strong>convert video to GIF</strong>. Each tool has its own static SEO page for better indexing.</p>
+
+        <h2>Popular PDF Tools</h2>
+        <ul>
+            <li><strong>Merge PDF:</strong> Combine multiple PDF files in one click.</li>
+            <li><strong>Split and Extract:</strong> Keep only the page ranges you need.</li>
+            <li><strong>Compress PDF:</strong> Reduce file size for email and uploads.</li>
+            <li><strong>Reorder and Delete Pages:</strong> Organize document structure quickly.</li>
+            <li><strong>वॉटरमार्क और पेज नंबर जोड़ें:</strong> व्यवसाय और साझाकरण के लिए फ़ाइलें तैयार करें.</li>
+            <li><strong>पीडीएफ से पाठ:</strong> दस्तावेज़ टेक्स्ट को TXT फ़ाइल में निर्यात करें।</li>
+            <li><strong>क्यूआर उपकरण:</strong> टेक्स्ट और छवियों से क्यूआर कोड बनाएं और स्कैन करें।</li>
+            <li><strong>बारकोड उपकरण:</strong> एकाधिक बारकोड प्रारूप बनाएं और स्कैन करें।</li>
+            <li><strong>छवि उपयोगिताएँ:</strong> छवियों को बैच में रूपांतरित करें, आकार बदलें और संपीड़ित करें।</li>
+            <li><strong>वीडियो उपयोगिताएँ:</strong> वीडियो संपीड़ित करें और लघु GIF क्लिप निर्यात करें।</li>
+        </ul>
+
+        <p><a href="/hi/tools/">सभी समर्पित टूल पृष्ठ ब्राउज़ करें</a></p>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="pdflogo.png" alt="फ्रीपीडीएफ प्रो" width="32" height="32" loading="lazy" decoding="async">
+                <span>फ्रीपीडीएफ प्रो</span>
+            </div>
+            <div class="footer-links">
+                <a href="/hi/guides/">गाइड</a>
+                <a href="/hi/about/">हमारे बारे में</a>
+                <a href="/hi/contact/">संपर्क</a>
+                <a href="mailto:yousseflahsaniiiiii@gmail.com">ईमेल</a>
+                <a href="tel:+212615320091">पुकारना</a>
+            </div>
+            <p>© 2024 फ्रीपीडीएफ प्रो। सर्वाधिकार सुरक्षित।</p>
+        </div>
+    </footer>
+    
+    <script src="/language-switcher.js" defer=""></script>
+    <script src="app.js"></script>
+
+
+
+</body></html>

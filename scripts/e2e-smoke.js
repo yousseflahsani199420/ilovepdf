@@ -161,10 +161,10 @@ async function run() {
       console.log("Video compressor functional test skipped: MediaRecorder unavailable in headless runtime.");
     }
 
-    await page.goto(`${BASE}/tools/qr-code-generator/`, { waitUntil: "domcontentloaded" });
+    await page.goto(`${BASE}/tools/qr-code-generator/?landing=1`, { waitUntil: "domcontentloaded" });
     assert((await page.locator("h1").innerText()).toLowerCase().includes("qr code"), "QR SEO page failed to load.");
 
-    await page.goto(`${BASE}/tools/video-compressor/`, { waitUntil: "domcontentloaded" });
+    await page.goto(`${BASE}/tools/video-compressor/?landing=1`, { waitUntil: "domcontentloaded" });
     assert((await page.locator("h1").innerText()).toLowerCase().includes("video"), "Video SEO page failed to load.");
     console.log("SEO page smoke tests passed.");
 

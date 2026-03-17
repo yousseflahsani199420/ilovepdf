@@ -5,19 +5,24 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build:tools": "node scripts/generate-tool-pages.js",
+    "test:tools": "node scripts/test-tools.js",
+    "test:e2e": "node scripts/e2e-smoke.js"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "express": "^4.18.2",
     "compression": "^1.7.4",
-    "helmet": "^7.1.0",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "playwright": "^1.58.2",
+    "qrcode": "^1.5.4"
   },
   "keywords": [
     "pdf",

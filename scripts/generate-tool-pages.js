@@ -528,9 +528,9 @@ const categoryById = {
   protect: "pdf",
   unlock: "pdf",
   imagetopdf: "image",
-  pngtopdf: "image",
-  jpgtopdf: "image",
-  heictopdf: "image",
+  pngtopdf: "pdf",
+  jpgtopdf: "pdf",
+  heictopdf: "pdf",
   ocrtool: "image",
   imageconvert: "image",
   imageresize: "image",
@@ -739,7 +739,21 @@ const indexTemplate = () => {
   const groups = categoryOrder.map((category) => {
     const def = categoryDefs[category];
     const items = toolEntries.filter((tool) => tool.category === category);
-    const links = items
+    const orderedItems = (() => {
+      if (category !== "pdf") return items;
+      const priority = ["pdftopng", "pngtopdf", "heictopdf", "jpgtopdf"];
+      const score = (id) => {
+        const idx = priority.indexOf(id);
+        return idx === -1 ? 999 : idx;
+      };
+      return [...items].sort((a, b) => {
+        const sa = score(a.id);
+        const sb = score(b.id);
+        if (sa !== sb) return sa - sb;
+        return 0;
+      });
+    })();
+    const links = orderedItems
       .map((tool) => `<a href="/tools/${tool.slug}/"><span aria-hidden="true">${tool.icon}</span><span>${tool.name}</span></a>`)
       .join("");
     return `<section class="card">

@@ -81,6 +81,10 @@ app.use(compression());
 app.use(express.static(path.join(__dirname), {
   maxAge: "1y",
   setHeaders: (res, filePath) => {
+    if (filePath.endsWith(`${path.sep}sw.js`)) {
+      res.setHeader("Cache-Control", "no-cache");
+      return;
+    }
     if (filePath.match(/\.(html)$/)) {
       res.setHeader("Cache-Control", "no-cache");
     }

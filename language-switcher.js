@@ -120,9 +120,19 @@
     document.body.appendChild(switcher);
   }
 
+  function registerServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("/sw.js").catch(function () {
+        // Ignore registration errors to avoid blocking UI.
+      });
+    });
+  }
+
   function init() {
     injectStyles();
     buildSwitcher();
+    registerServiceWorker();
   }
 
   if (document.readyState === "loading") {

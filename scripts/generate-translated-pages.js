@@ -505,7 +505,38 @@ function applyTranslations($, translationMap) {
   }
 }
 
+function normalizeStaticAssetUrls($) {
+  const shouldKeep = (value) => {
+    return (
+      !value ||
+      value.startsWith("/") ||
+      value.startsWith("http://") ||
+      value.startsWith("https://") ||
+      value.startsWith("//") ||
+      value.startsWith("data:") ||
+      value.startsWith("blob:") ||
+      value.startsWith("#")
+    );
+  };
+
+  const toRootPath = (value) => {
+    if (shouldKeep(value)) return value;
+    if (value.startsWith("./")) return `/${value.slice(2)}`;
+    return `/${value}`;
+  };
+
+  $("img[src],script[src],source[src],link[href]").each((_, el) => {
+    const tag = String(el.name || "").toLowerCase();
+    const attr = tag === "link" ? "href" : "src";
+    const value = $(el).attr(attr);
+    if (!value) return;
+    $(el).attr(attr, toRootPath(value));
+  });
+}
+
 function localizePageUrls($, routePath, localeCode) {
+  normalizeStaticAssetUrls($);
+
   $("a[href]").each((_, el) => {
     const href = $(el).attr("href");
     if (!href) return;

@@ -3,7 +3,6 @@ const path = require("path");
 
 const BASE_URL = "https://www.i-lovepdf.site";
 const ADS_ID = "AW-17966685744";
-const ADS_PAGEVIEW_SEND_TO = "AW-17966685744/gx2DCM-MpPwbELC8l_dC";
 const OUTPUT_DIR = path.join(__dirname, "..", "tools");
 
 const tools = [
@@ -654,14 +653,7 @@ const pageTemplate = (tool) => {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '${ADS_ID}');
-  </script>
-  <script>
-    gtag('event', 'conversion', {
-      'send_to': '${ADS_PAGEVIEW_SEND_TO}',
-      'value': 1.0,
-      'currency': 'USD'
-    });
+    gtag('config', '${ADS_ID}', { 'send_page_view': false });
   </script>
   <script>
     (function () {
@@ -805,14 +797,7 @@ const indexTemplate = () => {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '${ADS_ID}');
-  </script>
-  <script>
-    gtag('event', 'conversion', {
-      'send_to': '${ADS_PAGEVIEW_SEND_TO}',
-      'value': 1.0,
-      'currency': 'USD'
-    });
+    gtag('config', '${ADS_ID}', { 'send_page_view': false });
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
